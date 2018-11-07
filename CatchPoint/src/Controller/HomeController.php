@@ -16,4 +16,11 @@ class HomeController extends Controller
             'controller_name' => 'HomeController',
         ]);
     }
+
+    /**
+     * @Route("/",name="accueil")
+     */
+    public function home(){
+        return $this->render('home/home.html.twig');
+    }
 }
