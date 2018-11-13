@@ -28,6 +28,8 @@ class Users
      */
     private $mdpHashe;
 
+    public $comfirmMdp;
+
     /**
      * @ORM\Column(type="string", length=40)
      */
@@ -53,12 +55,12 @@ class Users
      */
     private $email;
 
-    public function getIdUSer(): int
+    public function getIdUSer(): ?int
     {
         return $this->idUser;
     }
 
-    public function getUsername(): string
+    public function getUsername(): ?string
     {
         return $this->username;
     }
@@ -78,7 +80,7 @@ class Users
         return $this;
     }
 
-    public function getMdpHashe(): string
+    public function getMdpHashe(): ?string
     {
         return $this->mdpHashe;
     }
@@ -90,7 +92,7 @@ class Users
         return $this;
     }
 
-    public function getNom(): string
+    public function getNom(): ?string
     {
         return $this->nom;
     }
@@ -102,7 +104,7 @@ class Users
         return $this;
     }
 
-    public function getPrenom(): string
+    public function getPrenom(): ?string
     {
         return $this->prenom;
     }
@@ -114,7 +116,7 @@ class Users
         return $this;
     }
 
-    public function getAge(): int
+    public function getAge(): ?int
     {
         return $this->age;
     }
@@ -126,7 +128,7 @@ class Users
         return $this;
     }
 
-    public function getRoles(): string
+    public function getRoles(): ?string
     {
         return $this->roles;
     }
@@ -138,7 +140,7 @@ class Users
         return $this;
     }
 
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }

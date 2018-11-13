@@ -31,3 +31,5 @@ composer require orm-fixtures --dev permet de récup les composants pour créer 
 
 fixtures = des jeux de données pour test
 php bin/console make:fixtures
+
+php bin/console make:form LeNom puis au prochain input écrire l entite à lier
